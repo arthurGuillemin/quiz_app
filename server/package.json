@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "Server websocket for quiz app",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurGuillemin/quiz_app.git"
+  },
+  "keywords": [
+    "kahoot"
+  ],
+  "author": "Arthur Guillemin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurGuillemin/quiz_app/issues"
+  },
+  "homepage": "https://github.com/arthurGuillemin/quiz_app#readme"
+}
