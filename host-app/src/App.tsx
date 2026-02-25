@@ -39,7 +39,8 @@ function App() {
 
     switch (lastMessage.type) {
       case 'sync': {
-        setQuizCode(lastMessage.data.quizCode)
+        const data = lastMessage.data as any & { quizCode: string }
+        setQuizCode(data.quizCode)
         setPhase(lastMessage.phase)
         break
       }
@@ -58,7 +59,7 @@ function App() {
         setCurrentQuestion(question)
         setQuestionIndex(index)
         setQuestionTotal(total)
-        setRemaining(question.timer)
+        setRemaining(question.timerSec)
         setAnswerCount(0)
         setPhase('question')
 
@@ -97,7 +98,7 @@ function App() {
       }
 
       case 'error': {
-        console.error('Erreur du serveur:', lastMessage.error)
+        console.error('Erreur du serveur:', lastMessage.message)
         break
       }
     }
