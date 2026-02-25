@@ -12,7 +12,7 @@ import QuestionView from './components/QuestionView'
 import Results from './components/Results'
 import Leaderboard from './components/Leaderboard'
 
-const WS_URL = 'ws://localhost:3001'
+const WS_URL = 'https://75e5-185-226-32-80.ngrok-free.app/'
 
 function App() {
   const { status, sendMessage, lastMessage } = useWebSocket(WS_URL)

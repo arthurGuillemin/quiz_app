@@ -8,7 +8,7 @@ import FeedbackScreen from './components/FeedbackScreen'
 import ScoreScreen from './components/ScoreScreen'
 import './App.css'
 
-const WS_URL = 'ws://localhost:3001'
+const WS_URL = 'https://75e5-185-226-32-80.ngrok-free.app/'
 
 function App() {
   const { status, sendMessage, lastMessage } = useWebSocket(WS_URL)
