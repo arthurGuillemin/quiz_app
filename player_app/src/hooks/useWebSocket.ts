@@ -4,7 +4,7 @@
 // ============================================================
 
 import { useEffect, useRef, useState, useCallback } from 'react'
-import type { ClientMessage, ServerMessage } from '@shared/index'
+import type { ClientMessage, ServerMessage } from '../../../packages/shared-types/index'
 
 type ConnectionStatus = 'connecting' | 'connected' | 'disconnected'
 

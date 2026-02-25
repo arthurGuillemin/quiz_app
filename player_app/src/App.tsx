@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useWebSocket } from './hooks/useWebSocket'
-import type { QuizPhase, QuizQuestion } from '@shared/index'
+import type {  QuizQuestion } from '../../packages/shared-types/index'
 import JoinScreen from './components/JoinScreen'
 import WaitingLobby from './components/WaitingLobby'
 import AnswerScreen from './components/AnswerScreen'
